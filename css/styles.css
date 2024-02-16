@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg,  rgb(181, 20, 14) 42%, rgb(225, 230, 91) 100%);
+    height: 100vh;
+}
+
+@import url('https://fonts.cdnfonts.com/css/wilkey');
+
+h1{
+    font-family: 'Wilkey', sans-serif;
+    font-size: 5rem;                                                                                                                              
+}
+
+.amarillo {
+    color: red;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.verde {
+    color: blue;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.azul {
+    color:cornflowerblue
+}
+
+.capa0 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+.capa1 {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    z-index: 1;
+}
+
+.capa2 {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    z-index: 2;
+}
+
+.capa3 {
+    position: absolute;
+    left: 100px;
+    top: 850px;
+    width: calc(50% - 150px);
+    z-index: 3;
+    width: 10rem;
+    
+}
+@keyframes mario {
+    0%  {left: 0px; }
+  15%  {left: 2000px }
+  75%  {left: 0px; }
+  100% {left: 0px;}
+  
+}
+
+.animacion1{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: mario 7s infinite;
+}
+
+@keyframes tortuga{
+    0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
+}
+
+.animacion2{
+    width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+}
